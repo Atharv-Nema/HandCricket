@@ -1,7 +1,7 @@
 In order of priority
 
-1. Make the main function to implement the ideal distribution.
-2. Make a tester class.
+1. Make a tester class.
+2. Make the main function.
 3. Make a BatsmanComputer class.
 4. Make a math document explaining the theory and derivations behind the stuff.
 5. Make a backend server that stores the players past history.

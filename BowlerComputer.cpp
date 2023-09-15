@@ -40,7 +40,7 @@ void Bowler :: UpdateDistribution(unordered_map<int,int> batsmans_history){
     r[0] for the min, r[1] for the 2nd min, r[2] for 3rd min, r[3] for 4th min, r[4] for 5th min and r[5] for 6th min.(I will use a constant vector
     r = RANDOMIFIER to specify this)
     (This choice has no mathematical basis, it is just what I thought would be a good compromise between randomness and expected value)
-    (Notice that the goal of the bowler is to minimize the expected value)
+    (Notice that the goal of the bowler is to minimize the expected value hence higher probabilites for the numbers which give lower expected value)
     */
     double sigmaVal = 0;//sigmaVal = sigma(P(i)*i)
     for(int i = 1; i <= 6; i++){
