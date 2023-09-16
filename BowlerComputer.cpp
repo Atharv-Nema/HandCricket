@@ -68,8 +68,8 @@ int Bowler::NextMove(){
     double lower_bound = 0;
     double upper_bound = 1;
     srand(100000*time(NULL) % 12343);
-    double random_double = lower_bound + (upper_bound - lower_bound) * (rand() % max_rand) / max_rand;
-    int sum = 0;
+    double random_double = lower_bound + (upper_bound - lower_bound) * (rand() % max_rand) / double(max_rand);
+    double sum = 0;
     for(int i = 1; i <= 6; i++){
         sum += distribution[i];
         if(sum >= random_double){

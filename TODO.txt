@@ -1,8 +1,6 @@
 In order of priority
 
-1. Make a tester class.
-2. Make the main function.
-3. Make a BatsmanComputer class.
-4. Make a math document explaining the theory and derivations behind the stuff.
-5. Make a backend server that stores the players past history.
-6. Make a good UI.
+1. Make a math document explaining the theory and derivations behind the stuff.
+2. Make a tester class.
+3. Make a backend server that stores the players past history.
+4. Make a good UI.
