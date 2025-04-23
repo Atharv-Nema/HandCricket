@@ -7,6 +7,7 @@ class Batsman{
         unordered_map<int,double> distribution;
     public:
         Batsman();
+        Batsman(vector<double> Dist);
         void UpdateDistribution(unordered_map<int,int> bowlers_history);
         int NextMove();
     
@@ -20,6 +21,18 @@ Batsman :: Batsman(){
     distribution[4] = 0.1615;
     distribution[5] = 0.1542;
     distribution[6] = 0.1473;
+}
+Batsman :: Batsman(vector<double> Dist){
+    if(Dist.size() != 6){
+        throw invalid_argument("The distribution vector should be of size 6");
+    }
+    double Sum = 0;
+    for(int i = 0; i < 6; i++){
+        Sum += Dist[i];
+    }
+    for(int i = 0; i < 6; i++){
+        distribution[i + 1] = Dist[i]/Sum; 
+    }
 }
 void Batsman :: UpdateDistribution(unordered_map<int,int> bowlers_history){
     double sum = 0;
